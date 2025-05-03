@@ -8,7 +8,14 @@ function Footer() {
       <div className="footer_left">
         <div className="logo">
           <a href="/">
-            <img src='/assets/logo_text.svg' className='site_logo' alt="newstudio logo" draggable="false" />
+            <Image
+              src="/assets/logo_text.svg"
+              alt="Site Logo"
+              width={800}     // actual SVG width in px
+              height={300}    // actual SVG height in px
+              className="site_logo"
+              priority        // preloads it
+            />
           </a>
         </div>
         <h3>Better YouTube Analytics</h3>
