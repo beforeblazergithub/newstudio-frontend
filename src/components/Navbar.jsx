@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -14,8 +13,6 @@ export default function Navbar() {
             src="/assets/logo_text.svg"
             alt="Site Logo"
             className="site_logo"
-            width={1}
-            height={1}
             draggable="false"
           />
         </a>
