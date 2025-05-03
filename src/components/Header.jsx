@@ -169,7 +169,7 @@ const Header = () => {
                 </div>
                 <div className="feature">
                   <h2>Brings back Engaged views</h2>
-                  <p>After YouTube's latest update, Engaged Views are buried under Analytics → Engagement, making real-time Engaged stats impossible to access.<br/><br/>NewStudio injects an Engaged Views switch directly into your Analytics page. Simply toggle it, and our system instantly deliver 100% accurate real-time statistics!</p>
+                  <p>After YouTube&rsquo;s latest update, Engaged Views are buried under Analytics → Engagement, making real-time Engaged stats impossible to access.<br/><br/>NewStudio injects an Engaged Views switch directly into your Analytics page. Simply toggle it, and our system instantly deliver 100% accurate real-time statistics!</p>
                 </div>
               </div>
               <div className="works_content" id="works_content_middle">

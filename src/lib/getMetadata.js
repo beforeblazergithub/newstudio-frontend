@@ -13,7 +13,7 @@ export function getMetadata() {
       url: 'https://newstudio.app',
       images: [
         {
-          url: 'https://newstudio.app/newstudio.png',
+          url: 'https://newstudio.app/icon.png',
           width: 300,
           height: 300,
           alt: 'NewStudio'
