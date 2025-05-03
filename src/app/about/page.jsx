@@ -10,7 +10,7 @@ export default function About() {
     <div>
       <Navbar />
       <div className="about">
-        <h1>About: <span><Image src="/images/icons/logo.svg" alt="logo" width={32} height={32} /> NewStudioNewStudio</span></h1>
+        <h1>About: <span><img src="/images/icons/logo.svg" alt="logo" /> NewStudio</span></h1>
 
         <p>
           NewStudio is a free Chrome extension that completely transforms YouTube Studio into a fully customizable, modular, updated dashboard. As of now there are many easy of use features and most notably the bring back Engaged views feature. More updates soon!</p>

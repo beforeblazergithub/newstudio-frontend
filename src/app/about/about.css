@@ -36,3 +36,42 @@
 .about p a:hover {
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 600px) {
+  .about {
+    margin: 0;
+    margin-left: 5%;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    padding: 4vw 5vw;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #161616, inset 0 0 10px #0f0f0f;
+    outline: 2px solid #2e2e2e;
+  }
+
+  .about h1 {
+    font-size: 6vw;
+    display: flex;
+    margin-bottom: 1.5vw;
+    text-shadow: 0 0 5px #161616;
+    gap: 1vw;
+  }
+
+  .about h1 span img {
+    height: 5vw;
+    margin-right: 1vw;
+  }
+
+  .about h1 span img {
+    height: 3rem;
+    margin-right: -.4rem;
+  }
+
+  .about p {
+    font-size: 4vw;
+    line-height: 1.4;
+    text-shadow: 0 0 5px #161616;
+    margin-bottom: 2vw;
+  }
+}
