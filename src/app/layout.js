@@ -26,8 +26,7 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.0/css/all.css"></link>
         <link rel="icon" href="/favicon.ico" />
         <link rel="shortcut icon" href="/favicon.ico"  />
-        <link rel="apple-touch-icon" href="/newstudio.png" />
-        <meta property="og:image" content="/newstudio.png" />
+        <link rel="apple-touch-icon" href="/icon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://rsms.me/"/>

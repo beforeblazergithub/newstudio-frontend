@@ -8,7 +8,7 @@ function Footer() {
       <div className="footer_left">
         <div className="logo">
           <a href="/">
-            <Image src='/assets/logo_text.svg' className='site_logo' alt="newstudio logo" width={1} height={1} draggable="false" />
+            <img src='/assets/logo_text.svg' className='site_logo' alt="newstudio logo" draggable="false" />
           </a>
         </div>
         <h3>Better YouTube Analytics</h3>

@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className={mobileOpen ? "open" : ""}>
       <div className="left">
         <a href="/">
-          <Image
+          <img
             src="/assets/logo_text.svg"
             alt="Site Logo"
             className="site_logo"
