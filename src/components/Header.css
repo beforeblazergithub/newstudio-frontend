@@ -151,7 +151,6 @@
   margin: 2rem auto;
   margin-top: 0;
   user-select: none;  
-  touch-action: none; 
   border-radius: 1rem;
   z-index: 19;
   border: 3px solid #1a1a1a;
@@ -271,8 +270,7 @@
       margin: 2rem auto;
       margin-top: -1rem;
       margin-bottom: 1rem;
-      user-select: none;   /* prevent text selection while dragging */
-      touch-action: none;  /* allow our touchmove handler */
+      user-select: none;  
       border-radius: 1rem;
       z-index: 19;
       border: 3px solid #262626;

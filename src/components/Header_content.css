@@ -87,7 +87,6 @@
   border-radius: 1vw;
   user-select: none;
   -webkit-user-drag: none;
-  touch-action: none;
 }
 
 .works .works_content .image-container .image-overlay {
