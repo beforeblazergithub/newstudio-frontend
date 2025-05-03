@@ -1,0 +1,290 @@
+.main-content {
+  width: 100%;
+}
+
+.header-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    font-family: InterVariable, sans-serif;
+}
+  
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    font-family: InterVariable, sans-serif;
+}
+
+.pill {
+    background-color: #151515;
+    padding: .2vw .6vw .2vw .6vw;
+    box-shadow: 0 0 10px #0f0f0f, inset 0 0 10px #1c1c1c;
+    font-size: .9rem;
+    border-radius: 5vw;
+    /*color:#111111;*/
+    color: #939393;
+    margin: auto;
+    margin-bottom: 1vw;
+    border: 2px solid #202020;
+    font-family: InterVariable, sans-serif;
+    cursor: pointer;
+}
+
+.pill i {
+    margin-right: .4rem;
+}
+
+.slogan {
+  font-family: InterVariable, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slogan h2 {
+  font-family: InterVariable, sans-serif;
+  z-index: 99;
+  color: var(--gray900);
+  letter-spacing: -.03em;
+  -webkit-text-stroke-color: var(--gray700);
+  font-size: 3.35rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.604);
+}
+
+.slogan h2 span {
+  background-color: red;
+  color: #151515;
+  border-radius: 1.5rem;
+  padding: 0 .8rem;
+  text-shadow: 0 2px 4px rgba(54, 3, 3, 0.604);
+  box-shadow:
+    /* inset glow inside the red pill */
+    inset 0 0 10px rgba(165, 4, 4, 0.8),
+    inset 0 0 20px rgba(0,0,0,0.3);
+}
+
+.description {
+    font-family: InterVariable, sans-serif;
+    font-size: 1.2rem;
+    color: #ffffff;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    text-shadow: 0 0 8px rgba(14, 14, 14, 0.604);
+}
+
+.description h5 {
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description h5 i {
+    margin-right: .4rem;
+    font-weight: 600;
+    margin-top: .1rem;
+    color: #fff;
+}
+
+.header .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0;
+}
+
+.header .buttons button {
+  font-family: InterVariable, sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  border-radius: 50rem;
+  box-shadow: inset 0 0 5px #666666, 0 0 10px #2b2b2b, 0 0 30px #474747;
+  text-shadow: 0 0 5px #c9c9c9;
+  border: none;
+  background-color: #ffffff;
+  color: #0f0f0f;
+  padding: .8rem 1.2rem;
+  transition: all .3s ease;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .buttons button.download-free:hover {
+  background-color: #dcdcdc;
+  box-shadow: inset 0 0 8px #303030, 0 0 10px #2b2b2b, 0 0 25px #474747;
+  transition: all .3s ease;
+}
+
+.header .buttons button.download-free i {
+  font-size: 1.2rem;
+  margin-right: .6rem;
+  margin-top: .1rem;
+}
+
+.header .buttons button.demo-btn {
+  background-color: #262626;
+  text-shadow: 0 0 5px #474747;
+  box-shadow: inset 0 0 5px #121212, 0 0 10px #181818;
+  color: #fff;
+}
+
+.header .buttons button.demo-btn:hover {
+  background-color: #232323;
+  transition: all .3s ease;
+}
+
+.slider-container {
+  --mask: 50%;
+  position: relative;
+  width: 38rem;
+  height: 23rem;
+  overflow: hidden;
+  margin: 2rem auto;
+  margin-top: 0;
+  user-select: none;  
+  touch-action: none; 
+  border-radius: 1rem;
+  z-index: 19;
+  border: 3px solid #1a1a1a;
+  box-shadow: inset 0 0 10px #0e0e0e, 0 0 10px #121212;
+  overflow: hidden;
+}
+
+.slider-container .after-layer,
+.slider-container .after-layer,
+.slider-container .before-layer {
+  position: absolute;
+  top: -14%;
+  right: -10%;
+  width: 220%;
+  height: 220%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left center;
+}
+
+.slider-container .before-layer {
+  z-index: 1;           
+}
+
+/* the draggable rail + icon */
+.separator {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transform: translateX(-50%);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+/* white line a couple px thick */
+.separator .line {
+  position: absolute;
+  width: .8rem;
+  height: 110%;
+  background: #262626;
+  top: -5%; left: 50%;
+  transform: translateX(-50%);
+  border-radius: .2rem;
+  box-shadow: 0 0 10px #2b2b2bbe;
+  z-index: 20;
+}
+
+/* rotate-arrows icon */
+.separator i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  font-size: 1.8rem;
+  padding: .6rem;
+  color: #ffffff;
+  background: #262626db;
+  box-shadow: inset 0 0 5px #1a1a1a;
+  border-radius: 2rem;
+  z-index: 22;
+}
+@media only screen and (max-width: 600px) {
+    .header {
+        margin-top: 25vw;
+    }
+    .pill {
+        padding: .3rem .65rem .26rem;
+    }
+    .slogan {
+        margin-top: 1vw;
+        font-family: InterVariable, sans-serif;
+    }
+    .slogan h2 {
+        font-size: 6.2vw;
+        line-height: 9vw;
+        font-family: InterVariable, sans-serif;
+    }
+    .slogan h2 span {
+      background-color: red;
+      color: #151515;
+      border-radius: .8rem;
+      padding: 0 .5rem .2rem .5rem;
+    }    
+    .description {
+      display: flex;
+      justify-content: center;   /* center children horizontally */
+      align-items: center;       /* center children vertically within the line */
+      gap: .5rem;
+      margin: 2.5rem 0 3rem;     /* top and bottom only; left/right = 0 since full-width */
+      font-size: .9rem;
+      text-align: center;
+    }
+    .description h5 {
+      width: min-content;
+      min-width: 7rem;
+      display: flex;
+      gap: -6vw;
+    }
+    .description h5 div {
+      text-align: center;
+    }
+    .description h5 i {
+        font-weight: 600;
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    .slider-container {
+      --mask: 50%;
+      position: relative;
+      width: 23rem;
+      height: 14rem;
+      overflow: hidden;
+      margin: 2rem auto;
+      margin-top: -1rem;
+      margin-bottom: 1rem;
+      user-select: none;   /* prevent text selection while dragging */
+      touch-action: none;  /* allow our touchmove handler */
+      border-radius: 1rem;
+      z-index: 19;
+      border: 3px solid #262626;
+      box-shadow: inset 0 0 10px #0e0e0e, 0 0 10px #121212;
+      overflow: hidden;
+    }
+    .header .buttons {
+      margin-bottom: 1rem;
+      margin-top: .8rem;
+    }
+    .header .buttons button {
+      font-size: 1rem;
+      padding: .6rem 1rem;
+    }
+}

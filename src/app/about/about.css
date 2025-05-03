@@ -1,0 +1,38 @@
+.about {
+    background-color: #131313;
+    padding: 2.5rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #161616, inset 0 0 10px #0f0f0f;
+    outline: 2px solid #2e2e2e;
+    margin: 3rem auto;
+    margin-top: 9rem;
+}
+
+.about h1 {
+    font-size: 2rem;
+    text-shadow: 0 0 5px #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about h1 span {
+    display: flex;
+    align-items: center;
+}
+
+.about h1 span img {
+    height: 3rem;
+    width: auto;
+    margin-right: -.4rem;
+    user-select: none;
+}
+
+.about p {
+    font-size: 1.05rem;
+    text-shadow: 0 0 5px #161616;
+}
+
+.about p a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+  :root { font-family: InterVariable, sans-serif; }
+}
+
+::selection {
+  background-color: #b9b9b9;
+  color: #101010;
+}
+
+body {
+  background-image: url('/assets/bk.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #171717;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: InterVariable, sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html, 
+#__next {
+  height: 100%;
+  margin: 0;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: .6vw;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #131313;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:  #fe0000; 
+  border-radius: 1vw; 
+}
+
+.descriptor {
+  margin-top: 8vw;
+  margin-bottom: 1.5vw;
+  font-family: InterVariable, sans-serif;
+  font-size: .85vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.descriptor h1 {
+  width: 33vw;
+  line-height: 2vw;
+}
+
+.privacy {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 7vw;
+  padding-bottom: 2.5vw;
+  text-align: left;
+  font-size: 1vw;
+}
+
+.privacy h1:first-of-type {
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.privacy h1 {
+  font-size: 2rem;
+  margin-bottom: .5vw;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 1rem;
+  font-family: InterVariable, sans-serif;
+}
+
+.privacy h2 {
+  font-size: 1.5rem;
+  font-family: InterVariable, sans-serif;
+  margin: .5vw 0;
+}
+
+.privacy p {
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+.privacy a {
+  text-decoration: underline;
+  color: #258bff;
+  font-weight: 700;
+}
+
+ul {
+  margin-left: 4vw;
+}
+
+.about {
+  width: 38vw;
+  margin-left: 31vw;
+  margin-top: 7vw;
+  padding-bottom: .6vw;
+}
+
+.about h1 {
+  font-size: 2.5vw;
+  margin-bottom: .5vw;
+  font-family: InterVariable, sans-serif;
+}
+
+.about p {
+  font-size: 1vw;
+  margin-bottom: 1vw;
+  color: #c7c7c7;
+}
+
+.about p a {
+  color: #258bff;
+  font-weight: 600;
+}
+
+.not-found {
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 600px) {
+  .descriptor {
+    margin-top: 25vw;
+    margin-bottom: 4vw;
+    font-family: InterVariable, sans-serif;
+    font-size: 3.5vw; 
+  }
+  .descriptor h1 {
+    width: 90vw;
+    line-height: 8vw;
+    margin-top: 1vw;
+  }
+  .privacy {
+    width: 80vw;
+    margin-left: 10%;
+    margin-top: 25vw;
+    font-size: 4vw;
+    padding-bottom: 4vw;
+    overflow: hidden;
+  }
+  .privacy h1 {
+    font-size: 6vw;
+  }
+  .privacy h2 {
+    font-size: 5vw;
+  }
+  .privacy p {
+    font-size: 4vw;
+    font-weight: 500;
+  }
+  ul {
+    margin-left: 5vw;
+  }
+  .about {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 25vw;
+    padding-bottom: 3vw;
+  }
+  .about h1 {
+    font-size: 6vw;
+    margin-bottom: .5vw;
+    font-family: InterVariable, sans-serif;
+  }
+  .about p {
+    font-size: 4vw;
+    margin-bottom: 1vw;
+    color: #c7c7c7;
+  }
+}
