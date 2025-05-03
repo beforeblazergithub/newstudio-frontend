@@ -8,13 +8,11 @@ function Footer() {
       <div className="footer_left">
         <div className="logo">
           <a href="/">
-            <Image
+            <img
               src="/assets/logo_text.svg"
               alt="Site Logo"
-              width={800}     // actual SVG width in px
-              height={300}    // actual SVG height in px
               className="site_logo"
-              priority        // preloads it
+              draggable="false"
             />
           </a>
         </div>
