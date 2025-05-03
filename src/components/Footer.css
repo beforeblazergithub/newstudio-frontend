@@ -51,8 +51,8 @@ footer .footer_left .logo img {
 }
 
 footer .footer_left .logo img.site_logo {
-    height: 3rem !important;
-    width: 12rem !important;
+    height: 2.75rem !important;
+    width: auto;
 }
 
 footer .footer_left .logo img.site_name {
@@ -182,11 +182,13 @@ footer .footer_right h2:hover {
         left: 5vw;
     }
     footer .footer_left .logo img {
-        height: 15rem;
+        height: 15vw;
     }
     footer .footer_left .logo img.site_logo {
-        height: 34vw !important;
-        width: 55vw !important;
+        height: 8vw !important;
+        width: auto;
+        margin-top: .7rem;
+        margin-bottom: .7rem;
     }
     footer .footer_left .logo img.site_name {
         margin-left: 2.5vw;
