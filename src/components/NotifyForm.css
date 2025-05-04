@@ -18,6 +18,21 @@
   font-family: InterVariable, sans-serif;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-text-fill-color: #fff !important;                         /* keep your white text */
+  -webkit-box-shadow: inset 0 0 0px 1000px #262626 !important;     /* re-apply your dark background */
+  box-shadow: inset 0 0 0px 1000px #262626 !important;
+}
+
+/* Override Firefox autofill */
+input:-moz-autofill {
+  box-shadow: inset 0 0 0px 1000px #262626 !important;
+  -moz-text-fill-color: #fff !important;
+}
+
 .notify-form .input-group {
     position: relative;       /* establish stacking context */
     overflow: visible;        /* allow the glow to “bleed” out if you like */

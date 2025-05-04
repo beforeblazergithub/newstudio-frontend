@@ -48,7 +48,7 @@ function Footer() {
       <div className="footer_right">
         <div className="grid left">
           <h3>Home:</h3>
-          <a href="https://extension.newstudio.app"><h2>Download</h2></a>
+          <a href="/wip" target='_blank'><h2>Download</h2></a>
           <a href="/about"><h2>About</h2></a>
           <a href="mailto:support@newstudio.app"><h2>Contact</h2></a>
         </div>

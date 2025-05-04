@@ -25,7 +25,7 @@
 .faq-item.open .faq-answer {
   /* adjust as needed if any answer is very long */
   max-height: 12rem;
-  transition: all .3s ease;
+  transition: all .5s ease;
 }
 
 .faq-question {
@@ -53,13 +53,13 @@
 
 .faq-question i {
   font-size: 1rem;
-  transition: transform 0.3s ease;
+  transition: transform 0.5s ease;
 }
 
 .faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: all .3s ease;
+  transition: all .5s ease;
 }
 
 .faq-answer p {

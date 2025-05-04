@@ -68,10 +68,13 @@ export default function NotifyForm() {
 
   return (
     <div className="notify-form-wrapper">
-      <form className="notify-form" onSubmit={handleSubmit} noValidate>
+      <form className="notify-form" onSubmit={handleSubmit} noValidate autoComplete="on">
         <div className="input-group">
           <input
-            type="email"
+            type="email" 
+            name="email"
+            id="email"
+            autoComplete="email"
             placeholder="Get notified on launch..."
             value={email}
             onChange={handleChange}
