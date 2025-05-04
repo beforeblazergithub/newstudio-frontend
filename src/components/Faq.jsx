@@ -6,7 +6,7 @@ const faqData = [
   {
     question: 'Is NewStudio free?',
     answer:
-      'Yes, for now all features in NewStudio are fully free — no login required!',
+      'Yes, NewStudio is completely free — no login or payment required!',
   },
   {
     question: 'Does NewStudio collect or store my data?',
@@ -22,11 +22,6 @@ const faqData = [
     question: 'When can I expect new features?',
     answer:
       'We aim to ship updates roughly every month. Keep an eye on our <a href="https://discord.newstudio.app" target="_blank" rel="noopener noreferrer">Discord</a> for the latest announcements!',
-  },
-  {
-    question: 'Can I customize NewStudio?',
-    answer:
-      'WIP: Absolutely—open the settings panel to toggle features, switch themes, and adjust preferences. All your settings are saved locally.',
   },
   {
     question: 'How do I contact support?',

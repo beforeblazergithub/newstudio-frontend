@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import "./Header.css";
 import "./Header_content.css";
+import NotifyForm from './NotifyForm'
 
 const Header = () => {
   const [sliderPos, setSliderPos] = useState(50);
@@ -156,9 +157,10 @@ const Header = () => {
             <button className="demo-btn">Watch demo</button>
           </a>
         </div>
+        <NotifyForm />
         <div className="main-content">
           <div className="how_it_works" id='how-it-works'>
-            <h3>Whats it do?</h3>
+            <h3>What it offers?</h3>
             <h1>How it upgrades your <span><b><i className="fa-brands fa-youtube"></i></b>Studio</span></h1>
             <hr/>
             <div className="works">
@@ -169,13 +171,13 @@ const Header = () => {
                 </div>
                 <div className="feature">
                   <h2>Brings back Engaged views</h2>
-                  <p>After YouTube&rsquo;s latest update, Engaged Views are buried under Analytics → Engagement, making real-time Engaged stats impossible to access.<br/><br/>NewStudio injects an Engaged Views switch directly into your Analytics page. Simply toggle it, and our system instantly deliver 100% accurate real-time statistics!</p>
+                  <p>After YouTube&rsquo;s latest update, actual views, now named engaged views, are buried, making real-time actual views impossible to view.<br/><br/>NewStudio adds a toggle directly into your YouTube Studio to switch between views and engaged views.</p>
                 </div>
               </div>
               <div className="works_content" id="works_content_middle">
                 <div className="feature">
-                  <h2>Confirm sign-out</h2>
-                  <p>Nobody likes accidentally signing out of their channels or getting booted out of Analytics with a mis-click.<br/><br/>With NewStudio when you click Sign Out, it pops up a little confirmation saving you from having to re-login to every channel.</p>
+                  <h2>Confirmation to sign-out</h2>
+                  <p>Don't you just hate it when you accidentally click the sign out button, and you end up signed out of all of your Google accounts?<br/><br/>With NewStudio Confirm-Click, signing out requires a confirmation, saving you from having to log back in with all your Google accounts after a pesky misclick.</p>
                 </div>
                 <div className="image-container">
                   <img src="/assets/screen-2.png" className="image-two" alt="" />
@@ -188,8 +190,8 @@ const Header = () => {
                   <div className="image-overlay" />
                 </div>
                 <div className="feature">
-                  <h2>Confirm sign-out</h2>
-                  <p>Nobody likes accidentally signing out of their channels or getting booted out of Analytics with a mis-click.<br/><br/>With NewStudio when you click Sign Out, it pops up a little confirmation saving you from having to re-login to every channel.</p>
+                  <h2>Confirmation to sign-out</h2>
+                  <p>Don't you just hate it when you accidentally click the sign out button, and you end up signed out of all of your Google accounts?<br/><br/>With NewStudio Confirm-Click, signing out requires a confirmation, saving you from having to log back in with all your Google accounts after a pesky misclick.</p>
                 </div>
               </div>
               <div className="final_content_works">
@@ -202,10 +204,10 @@ const Header = () => {
                   </a>
                 </div>
                 <div className="single-review">
-                  <img src="/assets/shkeffy-profile.jpg" alt="shkeffy" />
+                  <img src="/assets/Gyro.webp" alt="Gyro" />
                   <div className="review-content">
-                    <h2>“Setting up NewStudio took under a minute for all my channels, it works awesome and its completely free, I was instantly seeing REAL engagement stats on my dashboard.”</h2>
-                    <h3>- Shkeffy, co-owner of NewStudio.app</h3>
+                    <h2>“Setting up NewStudio took just a few seconds, and it works perfectly. The community is insanely helpful, and I'm looking forward to not being duped out of my real views.”</h2>
+                    <h3>- Gyro, beta tester of NewStudio</h3>
                   </div>
                 </div>
               </div>

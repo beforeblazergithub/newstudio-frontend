@@ -1,0 +1,138 @@
+/* Centering wrapper */
+.notify-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -1rem;
+  margin-top: 2rem;
+  box-sizing: border-box;
+}
+
+/* The form “card” */
+.notify-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  width: fit-content;
+  font-family: InterVariable, sans-serif;
+}
+
+.notify-form .input-group {
+    position: relative;       /* establish stacking context */
+    overflow: visible;        /* allow the glow to “bleed” out if you like */
+  }
+  
+  /* overlay the inset glow above the children */
+  .notify-form .input-group::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 50rem;     /* match your pill shape */
+    box-shadow: inset 0 0 10px #1a1a1a;
+    outline: 2px solid #2b2b2b;
+    pointer-events: none;     /* so you can still click inputs/buttons */
+    z-index: 2;               /* above the input + button (which you’ve already set to z-index:1) */
+  }
+  
+  /* make sure your inputs and button sit below it */
+  .notify-form .input-group > * {
+    position: relative;
+    z-index: 1;
+  }
+
+/* Text input */
+.notify-form input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 50rem 0 0 50rem;
+  background: #262626;
+  box-shadow: 0 0 8px rgba(24, 24, 24, 0.5);
+  font-family: InterVariable, sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.notify-form input:focus {
+  box-shadow: 0 0 8px rgba(24, 24, 24, 0.5);
+}
+
+.ex_bob {
+    font-size: .9rem;
+    margin-top: .5rem;
+    text-shadow: 0 0 5px #161616;
+    color: #4e4e4e;
+}
+
+/* Submit button */
+.notify-form button {
+  padding: 0 1.2rem;
+  border: none;
+  border-radius: 0 50rem 50rem 0;
+  background: #ee0000;
+  color: #ffffff;
+  text-shadow: 0 0 5px #181818;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .4rem;
+  font-family: InterVariable, sans-serif;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.notify-form button:hover:not(:disabled) {
+  background: #b80000;
+}
+.notify-form button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* Feedback message container (always reserves space, but hidden until needed) */
+.notify-form .feedback-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1.25rem;       /* reserve vertical space */
+  visibility: hidden;        /* hide by default */
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+/* shown when feedback is active */
+.notify-form .feedback-message.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* error vs success colors */
+.notify-form .feedback-message.error {
+  color: #f44336;
+}
+.notify-form .feedback-message.success {
+  color: #4caf50;
+}
+
+/* icon inside feedback */
+.notify-form .feedback-message i {
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+
+/* 1) Wrap the input+button in a pill-shaped container */
+/* 1) Base pill container */
+.notify-form .input-group {
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-radius: 50rem;  /* pill shape */
+    /* removed overflow:hidden so the glow can sit outside */
+}
