@@ -153,7 +153,7 @@ const Header = () => {
               Install free
             </button>
           </a>
-          <a href="https://www.youtube.com/@shkeffy" target="_blank">
+          <a href="https://newstudio.app/wip" target="_blank">
             <button className="demo-btn">Watch demo</button>
           </a>
         </div>
