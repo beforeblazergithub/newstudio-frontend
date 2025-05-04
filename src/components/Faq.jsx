@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import './Faq.css';
 
 const faqData = [
@@ -31,7 +31,9 @@ const faqData = [
 ];
 
 export default function Faq() {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(-1);
+  const answerRefs = useRef([]);
+  useEffect(() => { /* no-op */ }, [openIndex]);
 
   const toggle = (idx) => {
     setOpenIndex((prev) => (prev === idx ? -1 : idx));
@@ -40,7 +42,6 @@ export default function Faq() {
   return (
     <div className="faq-container">
       <h2 className="faq-header">Have any questions?</h2>
-
       {faqData.map((item, idx) => (
         <div
           key={idx}
@@ -51,22 +52,25 @@ export default function Faq() {
             <i className={`fas ${openIndex === idx ? 'fa-minus' : 'fa-plus'}`} />
           </button>
 
-          <div className="faq-answer">
-            <p
-              dangerouslySetInnerHTML={{ __html: item.answer }}
-            />
+          <div
+            className="faq-answer"
+            ref={el => (answerRefs.current[idx] = el)}
+            style={{
+              maxHeight:
+                openIndex === idx
+                  ? `${answerRefs.current[idx]?.scrollHeight}px`
+                  : '0px',
+              transition: 'max-height 0.4s ease'
+            }}
+          >
+            <p dangerouslySetInnerHTML={{ __html: item.answer }} />
           </div>
         </div>
       ))}
-
       <div className="faq-footer">
         <p>
           More questions? Check out our discord{' '}
-          <a
-            href="https://discord.newstudio.app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://discord.newstudio.app" target="_blank" rel="noopener noreferrer">
             here
           </a>.
         </p>
