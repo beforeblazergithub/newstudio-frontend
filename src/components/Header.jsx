@@ -70,7 +70,7 @@ const Header = () => {
       <div className="header">
         <h3 className="pill">
           <i className="fa-solid fa-rocket-launch"></i>
-          Version 1.0 launching in may
+          Version 1.0 launching in (June EST)
         </h3>
         <div className="slogan">
           <h2>
